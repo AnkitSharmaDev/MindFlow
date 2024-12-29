@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='task.jpg' type='image/x-icon'>
+    <title>MindFlow</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro-animation">
+        <h1 class="intro-text">MindFlow</h1>
+    </div>
+
+    <div id="main-content">
+        <nav class="nav-bar">
+            <div class="logo">MindFlow</div>
+            <button class="btn" onclick="startEmotionAnalysis()">Start Analysis</button>
+        </nav>
+
+        <section class="analysis-section">
+            <h2>Emotional Analysis</h2>
+            <div class="video-feed" id="video-feed"></div>
+            <div class="chart-container">
+                <canvas id="emotion-chart"></canvas>
+            </div>
+            <div id="analysis-metrics" class="analysis-metrics"></div>
+        </section>
+
+        <section id="analysis-history">
+            <h2>Analysis History</h2>
+            <div class="history-list" id="history-list"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
